@@ -1,0 +1,93 @@
+.single{
+    display: flex;
+    .view{
+        flex:1;
+
+        .info{
+
+            .topInfo{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            h1{
+                font-weight: 500;
+            }
+
+            .details{
+                font-size: 1.4rem;
+
+                .item{
+                    margin: 2rem 0px;
+
+                    .itemTitel{
+                        font-weight: 600;
+                        margin-right: 0.7rem;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        hr{
+            width: 90%;
+            height: 0;
+            border: 0.5px solid gray;
+            margin: 1.5rem 0rem;
+        }
+
+        .chart{
+            margin-top: 2rem;
+            width: 80%;
+            height: 400px;
+        }
+    }
+    .activities{
+        flex:1;
+
+        h2{
+            margin-bottom: 1.5rem;
+        }
+
+        ul{
+            li{
+                list-style-type: none;
+                position: relative;
+                width: 1px;
+                padding-top:2rem ;
+                background-color: #f45b69;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #f45b69;
+                    transform: translateX(-50%);
+                }
+                div{
+                    min-width: 480px;
+                    padding: 1.5rem;
+                    background-color: #f45b6810;
+
+                    p{
+                        margin-bottom: 5px;
+                    }
+                    time{
+                        font-style: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
